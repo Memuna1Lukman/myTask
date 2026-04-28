@@ -13,12 +13,13 @@
 <body>
     <main>
         <div id="biggestDiv">
-            <div id="leftSideDiv">
+            <div id="leftSideDiv" class="area">
                 <div id="leftTask">
                     <img src="assets/menu.png" alt="home-icon" id="img" class="images">
                     <h2 id="begin">myTask</h2>
                 </div>
                 <div id="smallNotes">
+                    <p id="firstP">YOUR DAY,ORGANISED</p>
                     <div id="motivation">
                         <p class="doIt">Plan it.</p>
                         <p class="doIt">Do it</p>
@@ -27,18 +28,18 @@
                     </div>
                     <div id="checkboxes">
                         <ul id="mark">
-                            <li><input type="checkbox" class="marked marks" name="text"><label for="text">Design Homepage</label></li>
-                            <li><input type="checkbox" class="marked marks" name="text"><label for="text">Set up auth flow</label></li>
-                            <li><input type="checkbox"  class="unmarked marks" name="text"><label for="text">Build Dashboard UI</label></li>
-                            <li><input type="checkbox" class="unmarked marks" name="text"><label for="text">Write Unit test</label></li>
+                            <li class="marked"><input type="checkbox" class="marks circle" name="text"><label for="text">Design Homepage</label></li>
+                            <li class="marked"><input type="checkbox" class="marks circle" name="text"><label for="text">Set up auth flow</label></li>
+                            <li><input type="checkbox"  class="unmarked marks circle" name="text"><label for="text">Build Dashboard UI</label></li>
+                            <li><input type="checkbox" class="unmarked marks circle" name="text"><label for="text">Write Unit test</label></li>
                         </ul>    
                     </div>
                 </div>
             </div>
-            <div id="rightSideDiv">
+            <div id="rightSideDiv" class="area">
                 <div id="next">
-                    <h2 class="hello">Join myTask</h2>
-                    <p class="hello">Get started - it only takes a minutes</p>
+                    <h2 class="hello join">Join myTask</h2>
+                    <p class="hello join">Get started - it only takes a minutes</p>
                 </div>
                 <div id="form">
                     <form action="POST" id="formForm">
@@ -64,7 +65,7 @@
                         </div>
                         
                     </div>
-                    <p>Already have an account? <a href="#" id="signIn">Sign in</a></p>
+                    <p>Already have an account?<a href="#" id="signIn">Sign in</a></p>
                 </div>
             </div>
         </div>
