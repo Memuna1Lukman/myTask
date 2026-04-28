@@ -1,24 +1,11 @@
-<!-- @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Caveat&display=swap'); -->
 
-<!-- root files for CSS: :root {
-  --primaryor: #3E2C23;
-  --secondary: #E76F2E;
-  --accent: #F5E9D8;
-  --blue: #2FA4D7;
-
-
-  font-family: "Caveat", cursive;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-
-} -->
 
 
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Tasks</title>
@@ -28,7 +15,7 @@
         <div id="biggestDiv">
             <div id="leftSideDiv">
                 <div id="leftTask">
-                    <img src="#" alt="home-icon" id="img">
+                    <img src="assets/menu.png" alt="home-icon" id="img" class="images">
                     <h2 id="begin">myTask</h2>
                 </div>
                 <div id="smallNotes">
@@ -36,47 +23,50 @@
                         <p class="doIt">Plan it.</p>
                         <p class="doIt">Do it</p>
                         <p class="doIt">Crush it</p>
-                        <p id="notes">A task manager built sround the way you actually think-fast,flexible and visual</p>
+                        <p id="notes">A task manager built around the way <br> you actually think-fast,flexible and visual</p>
                     </div>
                     <div id="checkboxes">
-                        <input type="checkbox" class="marked" name="text"><label for="text">Design Homepage</label>
-                        <input type="checkbox" class="marked" name="text"><label for="text">Set up auth flow</label>
-                        <input type="checkbox"  class="unmarked" name="text"><label for="text">Build Dashboard UI</label>
-                        <input type="checkbox" class="unmarked" name="text"><label for="text">Write Unit test</label>
+                        <ul id="mark">
+                            <li><input type="checkbox" class="marked marks" name="text"><label for="text">Design Homepage</label></li>
+                            <li><input type="checkbox" class="marked marks" name="text"><label for="text">Set up auth flow</label></li>
+                            <li><input type="checkbox"  class="unmarked marks" name="text"><label for="text">Build Dashboard UI</label></li>
+                            <li><input type="checkbox" class="unmarked marks" name="text"><label for="text">Write Unit test</label></li>
+                        </ul>    
                     </div>
                 </div>
             </div>
             <div id="rightSideDiv">
-                <div>
-                    <h2 id="">Join myTask</h2>
-                    <p>Get started -- it only takes a minutes</p>
+                <div id="next">
+                    <h2 class="hello">Join myTask</h2>
+                    <p class="hello">Get started - it only takes a minutes</p>
                 </div>
                 <div id="form">
-                    <form action="POST">
-                        <label for="name" class="formData">Full name</label><input type="text" placeholder="john doe">
-                        <label for="email" class="formData">Email Address</label><input type="email" placeholder="johndoe@gmail.com">
-                        <label for="password" class="formData">Password<input type="password" placeholder="john">
-                        <button id="createAccount">Create Account</button>    
+                    <form action="POST" id="formForm">
+                        <div class="labels"><label for="name" class="formData">Full name</label><input type="text" placeholder="john doe" class="inputs"></div>
+                        <div class="labels"><label for="email" class="formData">Email Address</label><input type="email" placeholder="johndoe@gmail.com" class="inputs"></div>
+                        <div class="labels"><label for="password" class="formData">Password</label><input type="password" class="inputs"></div>
+                        
+                        <button id="createAccount" class="formData inputs">Create Account</button>    
                     </form>
                     <div id="hrLine">
-                        <hr><p>sign up</p><hr>
+                        <div class="line"></div>
+                        <span>sign up</span>
+                        <div class="line"></div>
                     </div>
                     <div id="media">
-                        <div id="google">
-                            <img src="" alt="google-logo">
+                        <div id="pngImg">
+                            <img src="assets/google.png" alt="google-logo" class="medias">
                             <p class="mediafonts">Google</p>
- 
                         </div>
-                        <div id="apple">
-                            <img src="" alt="apple-logo">
+                        <div id="pngImg1">
+                            <img src="assets/apple.png" alt="apple-logo" class="medias">
                             <p class="mediafonts">Apple</p>
-
                         </div>
-                        <p>Already have an account? <a href="#" id="signIn">Sign in</a></p>
+                        
                     </div>
+                    <p>Already have an account? <a href="#" id="signIn">Sign in</a></p>
                 </div>
             </div>
-
         </div>
     </main>
 </body>
