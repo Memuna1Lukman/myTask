@@ -116,7 +116,7 @@ li{
     align-items: center;
     color: var(--primaryor);
 }
-.inputs{
+.inputs, button{
     height: 38px;
     width: 100%;
     margin: 5px;

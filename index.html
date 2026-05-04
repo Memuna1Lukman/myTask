@@ -42,12 +42,13 @@
                     <p class="hello join">Get started - it only takes a minutes</p>
                 </div>
                 <div id="form">
+                    <p id="para"></p>
                     <form action="POST" id="formForm">
-                        <div class="labels"><label for="name" class="formData">Full name</label><input type="text" placeholder="john doe" class="inputs"></div>
-                        <div class="labels"><label for="email" class="formData">Email Address</label><input type="email" placeholder="johndoe@gmail.com" class="inputs"></div>
-                        <div class="labels"><label for="password" class="formData">Password</label><input type="password" class="inputs"></div>
+                        <div class="labels"><label for="name" class="formData">Full name</label><input type="text" placeholder="john doe" class="inputs" id="name" autocomplete="name"></div>
+                        <div class="labels"><label for="email" class="formData">Email Address</label><input type="email" placeholder="johndoe@gmail.com" class="inputs" id="email" autocomplete="email"></div>
+                        <div class="labels"><label for="password" class="formData">Password</label><input type="password" class="inputs" id="password" autocomplete="off"></div>
                         
-                        <button id="createAccount" class="formData inputs">Create Account</button>    
+                        <button id="createAccount" class="formData input">Create Account</button>    
                     </form>
                     <div id="hrLine">
                         <div class="line"></div>
@@ -70,5 +71,6 @@
             </div>
         </div>
     </main>
+    <script src="task.js"></script>
 </body>
 </html>
