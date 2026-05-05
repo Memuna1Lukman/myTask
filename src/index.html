@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../dist/output.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tasks</title>
+</head>
+<body>
+    <main class="grid justify-center items-center border border-burlywood ">
+        <div id="biggestDiv" class="grid justify-center grid-cols-2 items-stretch m-7 w-full border border-burlywood rounded-2xl">
+            <div id="leftSideDiv" class="area flex-1 p-5 bg-burlywood text-white">
+                <div id="leftTask" class="flex justify-start items-center gap-5 p-3">
+                    <img src="../assets/menu.png" alt="home-icon" id="img"  class="w-7 h-6 rounded-md p-1 bg-orange-600">
+                    <h2 id="begin" class="text-white font-bold text-3xl">myTask</h2>
+                </div>
+                <div id="smallNotes" class="block gap-0 m-14">
+                    <p id="firstP" class="text-[#E76F2E] text-sm">YOUR DAY,ORGANISED</p>
+                    <div id="motivation" >
+                        <p class="doIt font-semibold text-3xl text-accents">Plan it.</p>
+                        <p class="doIt font-semibold text-3xl text-accents">Do it</p>
+                        <p class="doIt font-semibold text-3xl text-accents">Crush it</p>
+                        <p id="notes" class="text-amber-600">A task manager built around the way <br> you actually think-fast,flexible and visual</p>
+                    </div>
+                    <div id="checkboxes" class="p-5">
+                        <ul id="mark" class="flex flex-col gap-3 m-0 p-0">
+                            <li class="marked text-[rgb(101,75,40)] line-through mb-4 "><input type="checkbox" class="marks circle text-black w-4 h-4 " name="text"><label for="text">Design Homepage</label></li>
+                            <li class="marked mb-4 text-[rgb(101,75,40)] line-through"><input type="checkbox" class="marks circle text-black w-4 h-4 rounded-full  border-2 border-burlywood" name="text"><label for="text">Set up auth flow</label></li>
+                            <li class="mb-4 text-[rgb(101,75,40)]"><input type="checkbox"  class="unmarked marks circle text-black w-4 h-4 rounded-full  border-2 border-burlywood" name="text"><label for="text">Build Dashboard UI</label></li>
+                            <li class="mb-4 text-[rgb(101,75,40)]"><input type="checkbox" class="unmarked marks circle text-black w-4 h-4 rounded-full  border-2 border-burlywood" name="text"><label for="text">Write Unit test</label></li>
+                        </ul>    
+                    </div>
+                </div>
+            </div>
+            <div id="rightSideDiv" class="area flex-1 p-5 block justify-start items-center bg-accents">
+                <div id="next">
+                    <h2 class="hello join m-0 p-0 gap-0 text-burlywood font-archivo font-bold text-4xl">Join myTask</h2>
+                    <p class="hello join m-0 p-0 gap-0 text-burlywood">Get started - it only takes a minutes</p>
+                </div>
+                <div id="form" class="m-3 p-3">
+                    <p id="para"></p>
+                    <form action="POST" id="formForm">
+                        <div class="labels p-3"><label for="name" class="formData block justify-center items-center text-burlywood">Full name</label><input type="text" placeholder="john doe" class="inputs h-10 w-full m-1 rounded-lg border border-burlywood placeholder-[#dd8e66] placeholder-p" id="name" autocomplete="name"></div>
+                        <div class="labels p-3"><label for="email" class="formData block justify-center items-center text-burlywood">Email Address</label><input type="email" placeholder="johndoe@gmail.com" class="inputs h-10 w-full m-1 rounded-lg border border-burlywood placeholder-[#dd8e66] placeholder-p" id="email" autocomplete="email"></div>
+                        <div class="labels p-3"><label for="password" class="formData block justify-center items-center text-burlywood">Password</label><input type="password" class="inputs h-10 w-full m-1 rounded-lg  border border-burlywood"  id="password" autocomplete="off"></div>
+                        
+                        <button id="createAccount" class="formData input block justify-center items-center text-burlywood bg-[#E76F2E] h-10 w-full m-1 rounded-lg  border border-burlywood">Create Account</button>    
+                    </form>
+                    <div id="hrLine" class="flex h-7 justify-center items-center p-2 text-center gap-4 w-full text-burlywood">
+                        <div class="line grow h-px bg-[#3E2C23]"></div>
+                        <span>sign up</span>
+                        <div class="line grow h-px bg-[#3E2C23]"></div>
+                    </div>
+                    <div id="media" class="flex justify-center items-center">
+                        <div id="pngImg" class="flex  justify-center items-center w-52 h-9 rounded-lg m-5 gap-2 border border-burlywood">
+                            <img src="../assets/google.png" alt="google-logo" class="medias w-8 h-4">
+                            <p class="mediafonts">Google</p>
+                        </div>
+                        <div id="pngImg1" class="flex  justify-center items-center w-52 h-8 rounded-lg m-5 gap-2 border border-burlywood">
+                            <img src="../assets/apple.png" alt="apple-logo" class="medias w-8 h-4">
+                            <p class="mediafonts">Apple</p>
+                        </div>
+                        
+                    </div>
+                    <p class="text-center text-[#a0603d]">Already have an account?<a href="#" id="signIn" class="text-[#E76F2E] p-1 no-underline">Sign in</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="task.js"></script>
+</body>
+</html>

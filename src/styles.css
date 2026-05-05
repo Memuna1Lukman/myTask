@@ -1,0 +1,210 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Caveat&display=swap');
+
+:root { 
+  --primaryor: #3E2C23;
+  --secondary: #E76F2E;
+  --accent: #F5E9D8;
+  --blue: #2FA4D7;
+  
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+} 
+
+#biggestDiv{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 4fr 6fr;
+    grid-template-areas: "leftSideDiv","rightSideDiv";
+    width: 100vw;
+    height: 100vh;
+    align-items: stretch;
+
+    /* height: auto; */
+/* }
+.area{
+    flex: 1;
+    padding: 20px;
+}
+main{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+    border: 1px solid burlywood;
+    border-radius: 12px;
+    
+}
+#leftSideDiv{
+    background-color: var(--primaryor);
+    color: white;
+}
+#leftTask{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+#smallNotes{
+    display: block;
+    gap: 0;
+}
+#motivation,.doIt{
+    margin: 0px;
+    padding: 0;
+}
+.doIt{
+    color: var(--accent);
+    font-size: larger;
+}
+#notes{
+    color: burlywood;
+}
+input[type="radio"]{
+    margin-right: 10px;
+}
+#checkboxes{
+   padding: 20px; 
+}
+.marks{
+    color: black;
+}
+#mark{
+    display: block;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+li{
+   margin-bottom: 15px; 
+   color: rgb(101, 75, 40);
+}
+.marked{
+    text-decoration: line-through;
+}
+#rightSideDiv{
+    display: block;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--accent);
+}
+.hello{
+    margin: 0;
+    padding: 0;
+    gap: 0px;
+    
+}
+.join{
+    color: var(--primaryor);
+
+}
+#form{
+    margin: 10px;
+    padding: 10px;
+}
+.formData{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    color: var(--primaryor);
+}
+.inputs, button{
+    height: 38px;
+    width: 100%;
+    margin: 5px;
+    border-radius: 8px;
+    border: 1px solid burlywood;
+    
+}
+.labels{
+    padding: 10px;
+}
+#hrLine{
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    gap: 15px;
+    width: 100%;
+    color: burlywood;
+}
+.line{
+    flex-grow: 1;
+    height: 1px;
+    background-color: var(--primaryor);
+}
+.images{
+    width: 30px;
+    height: 25px;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--secondary);
+    
+}
+.medias{
+    width: 30px;
+    height: 28px;
+}
+#media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#pngImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    border: 2px solid burlywood;
+    gap: 20px;
+    margin: 20px;
+    border-radius: 8px;
+}
+#pngImg1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    border: 2px solid burlywood;
+    border-radius: 8px;
+    gap: 20px;
+    margin: 20px;
+}
+#firstP{
+    color: var(--secondary);
+}
+#createAccount{
+    background-color: var(--secondary);
+    border: #3E2C23;
+}
+#form p:last-child{
+    text-align: center;
+    color: #a0603d;
+}
+a{
+    color: var(--secondary);
+    text-decoration: none;
+    padding: 5px;
+}
+input::placeholder{
+    opacity: 1;
+    color: #dd8e66;
+    padding: 5px;
+} */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
